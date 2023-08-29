@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+    <!-- Importando CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Importando CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="topo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Cadastro Pessoa</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quadroDireito">
+        <div class="col-md-6">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="https://static.vecteezy.com/system/resources/previews/020/911/731/original/profile-icon-avatar-icon-user-icon-person-icon-free-png.png"
+                            alt="Imagem de Situação" width="100px">
+                        <p>Situação</p>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="ativo" value="ativo">
+                                    <label class="form-check-label" for="ativo">Ativo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="inativo"
+                                        value="inativo">
+                                    <label class="form-check-label" for="inativo">Inativo</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="caixa1">
+        <form>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="codigoCadastro" class="col-form-label col-form-label-sm">Código de Cadastro:</label>
+                    <input type="text" class="form-control form-control-sm" id="codigoCadastro">
+                </div>
+                <div class="col-md-3">
+                    <label for="tipoCadastro" class="col-form-label col-form-label-sm">Tipo de Cadastro:</label>
+                    <select class="form-control form-control-sm" id="tipoCadastro">
+                        <option value="fornecedor">Fornecedor</option>
+                        <option value="normal">Normal</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="tipoPessoa" class="col-form-label col-form-label-sm">Tipo de Pessoa:</label>
+                    <select class="form-control form-control-sm" id="tipoPessoa">
+                        <option value="fisica">Física</option>
+                        <option value="juridica">Jurídica</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="dataNascimento" class="col-form-label col-form-label-sm">Data de Nascimento:</label>
+                    <input type="date" class="form-control form-control-sm" id="dataNascimento">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="nome" class="col-form-label col-form-label-sm">Nome:</label>
+                    <input type="nome" class="form-control form-control-sm" id="nome">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="inscricaoEstadual" class="col-form-label col-form-label-sm">Inscrição Estadual:</label>
+                    <input type="text" class="form-control form-control-sm" id="inscricaoEstadual"
+                        placeholder="Digite a inscrição estadual">
+                </div>
+                <div class="col-md-6">
+                    <label for="cpf" class="col-form-label col-form-label-sm">CPF/CNPJ:</label>
+                    <input type="cpf" class="form-control form-control-sm" id="cpf" placeholder="Digite o CPF ou CNPJ">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="container mt-5">
+        <div class="topo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Cadastro de endereço</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <form>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="tipoCasa" class="col-form-label col-form-label-sm">Tipo de Casa:</label>
+                        <select class="form-control form-control-sm" id="tipoCasa">
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cep" class="col-form-label col-form-label-sm">CEP:</label>
+                        <input type="text" class="form-control form-control-sm" id="cep" placeholder="Digite o CEP">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="estado" class="col-form-label col-form-label-sm">Estado:</label>
+                        <select class="form-control form-control-sm" id="estado">
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade:</label>
+                        <input type="text" class="form-control form-control-sm" id="cidade"
+                            placeholder="Digite a cidade">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="logradouro" class="col-form-label col-form-label-sm">Logradouro:</label>
+                        <input type="text" class="form-control form-control-sm" id="logradouro"
+                            placeholder="Digite o logradouro">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numero" class="col-form-label col-form-label-sm">Número:</label>
+                        <input type="text" class="form-control form-control-sm" id="numero"
+                            placeholder="Digite o número">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="bairro" class="col-form-label col-form-label-sm">Bairro:</label>
+                        <input type="text" class="form-control form-control-sm" id="bairro"
+                            placeholder="Digite o bairro">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="complemento" class="col-form-label col-form-label-sm">Complemento:</label>
+                        <input type="text" class="form-control form-control-sm" id="complemento"
+                            placeholder="Digite o complemento">
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn" id="btnAdicionar">Adicionar</button>
+                        <button class="btn" id="btnExcluir">Excluir</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Cep</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">logradouro</th>
+                <th scope="col">Numero</th>
+                <th scope="col">bairro</th>
+                <th scope="col">complemento</th>
+            </tr>
+        </thead>
+
+
+
+
+        <tbody class="table-group-divider" id="tabelaDados">
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <div class="container mt-5">
+        <div class="topo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Cadastro Contato</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 form-group">
+                    <label for="comercial">Contato Comercial:</label>
+                    <input type="tel" class="form-control" id="comercial" name="comercial">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="residencial">Contato Residencial:</label>
+                    <input type="tel" class="form-control" id="residencial" name="residencial">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="celular">Contato Celular:</label>
+                    <input type="tel" class="form-control" id="celular" name="celular">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center">
+                    <button class="btn" id="btnSalvar">Salvar</button>
+                    <button class="btn" id="btnVoltar">Voltar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Importando Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

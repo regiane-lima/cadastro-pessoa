@@ -1,0 +1,94 @@
+.topo {
+    background-color: #e2f6fe;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(120, 119, 116);
+    
+
+}
+
+#codigoCadastro {
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+#dropdownTipoCadastro,
+#dropdownTipoCliente {
+    background-color: #dcf2fa;
+    color: rgb(0, 0, 0);
+
+}
+
+.imgDoTopo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white;
+
+}
+
+#ativo,
+#inativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.table-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table-responsive>* {
+    flex: 0 0 calc(12.5% - 10px);
+    /* Ajuste para espaçamento entre os elementos */
+    margin-bottom: 10px;
+    /* Espaçamento vertical entre os elementos */
+}
+
+#btnAdicionar,
+#btnExcluir,
+#btnVoltar,
+#btnSalvar {
+    background-color: #dcf2fa;
+    margin: 10px;
+
+}
+
+/* Seu CSS existente */
+
+@media (min-width: 800px) {
+    .quadroDireito {
+        float: right;
+        margin-top: 10%;
+        margin-left: 9%;
+      
+    }
+
+   
+
+
+    .codigoCadastro {
+        float: left;
+    }
+}
+
+
+@media (min-width: 300px) {
+    .quadroDireito {
+        margin-top: 10%;
+        
+        
+    }
+}
+
