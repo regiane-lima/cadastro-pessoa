@@ -1,11 +1,8 @@
 .topo {
     background-color: #e2f6fe;
     border: 1px solid rgb(255, 255, 255);
-    color: rgb(120, 119, 116);
-    
-
+    color: rgb(0, 0, 0);
 }
-
 #codigoCadastro {
     margin-bottom: 15px;
 }
